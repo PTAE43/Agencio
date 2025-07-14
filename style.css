@@ -16,7 +16,13 @@
     --color-text-btn-header: #0B0757;
     --color-text-h1: #0B0757;
     --color-text-top-h1: #1374F6;
+    --color-text-supusername: #8480AE;
+    --color-text-realtime: #97A0C3;
+    --color-text-increase: #04B78A;
     --color-bg-btn-header: #FDD76E;
     --color-bg-btn-header-hover: #fdc834;
     --color-bg-btn-banner: #1374F6;
+    --color-bg-btn-banner-hover: #3b8bf5;
+    --color-bg-btn-message: #00B894;
+    --color-bg-btn-message-hover: #08caa3;
 }
