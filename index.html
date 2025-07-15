@@ -15,23 +15,38 @@
 
 <body>
 <!-- Tae - Header -->
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+</script>
+
 <header class="font-(family-name:--font-Web)">
     <div class="absolute top-0 left-0 w-full h-[90%] bg-gray-100 z-0" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);"></div>
-    <nav class="flex justify-between items-center w-7xl mx-auto font-regular text-base px-10 py-5">
-        <div class="w-1/4 z-20"><a href="#"><img src="/source/img/Logo.png" alt="logo"></a></div>
-        <div class="text-(--color-text-menu) w-1/2 flex justify-between items-center px-5 z-20">
-            <ul class="flex justify-between items-center gap-10 text-sm">
-                <li class="hover:text-(--color-text-menu-hover)"><a href="#">Home</a></li>
-                <li class="hover:text-(--color-text-menu-hover)"><a href="#">Category</a></li>
-                <li class="hover:text-(--color-text-menu-hover)"><a href="#">Service</a></li>
-                <li class="hover:text-(--color-text-menu-hover)"><a href="#">Blog</a></li>
-                <li class="hover:text-(--color-text-menu-hover)"><a href="#">Contact</a></li>
-            </ul>
-            <button class="bg-(--color-bg-btn-header) hover:bg-(--color-bg-btn-header-hover) px-5 py-3 rounded-md text-(--color-text-btn-header)">
-                <a href="#">Create Account</a></button>
+    <nav class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 relative z-20 text-base md:text-base">
+        <div class="w-32 md:w-1/4">
+          <a href="#"><img src="/source/img/Logo.png" alt="logo"></a>
+        </div>
+        <button class="md:hidden" onclick="toggleMenu()">
+          <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div id="mobile-menu"
+          class="hidden absolute top-full left-0 w-full bg-white px-6 py-4 flex flex-col gap-4 text-sm md:static md:flex md:flex-row md:justify-end md:items-center md:w-3/4 md:gap-10 md:bg-transparent md:px-0 md:py-0 z-20">
+          <a href="#" class="hover:text-(--color-text-menu-hover)">Home</a>
+          <a href="#" class="hover:text-(--color-text-menu-hover)">Category</a>
+          <a href="#" class="hover:text-(--color-text-menu-hover)">Service</a>
+          <a href="#" class="hover:text-(--color-text-menu-hover)">Blog</a>
+          <a href="#" class="hover:text-(--color-text-menu-hover)">Contact</a>
+          <a href="#" class="bg-(--color-bg-btn-header) hover:bg-(--color-bg-btn-header-hover) text-(--color-text-btn-header) text-sm md:text-base px-4 py-2 md:px-5 md:py-3 rounded-md w-max self-start md:self-auto">
+            Create Account
+          </a>
         </div>
     </nav>
-    <div class="flex justify-between w-7xl mx-auto h-[800px] px-10">
+    <div class="flex flex-wrap justify-between w-7xl mx-auto h-[800px] px-10">
         <div class="relative top-[100px]">
             <div class="flex text-(--color-text-top-h1) font-regular text-xl py-5 gap-2">CREATIVE AGENCY<div class="inline-block mt-5 w-8 h-1 bg-(--color-text-top-h1) rounded"></div></div>
             <h1 class="text-(--color-text-h1) w-3/5 font-medium text-5xl/14 ">We are here to give the best service</h1>
@@ -83,6 +98,8 @@
         </div>
     </div>
 </header>
+  
+  
 
 
 <!-- wow - services -->
